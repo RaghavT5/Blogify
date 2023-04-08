@@ -9,10 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@pathofdev/react-tag-input": "^1.0.7",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "firebase": "^9.19.1",
+    "firestore": "^1.1.6",
+    "fuse.js": "^6.6.2",
+    "graphql": "^16.6.0",
+    "moment": "^2.29.4",
     "next": "13.2.4",
+    "quill": "^1.3.7",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-markdown": "^8.0.6",
+    "react-moment": "^1.1.3",
+    "react-quill": "^2.0.0",
+    "react-slick": "^0.29.0",
+    "react-toastify": "^9.1.2",
+    "react-tooltip": "^5.10.5",
+    "sass": "^1.60.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
   }
 }
