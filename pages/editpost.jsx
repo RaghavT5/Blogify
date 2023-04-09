@@ -40,7 +40,9 @@ const EditPost = () => {
   }, [q]);
 
   const handleCategoryChange = (e) => {
-    setCategory(e.target.value);
+    if (typeof category !== "undefined") {
+      setCategory(e.target.value);
+    }
   };
 
   const handleSubmit = async (e) => {
