@@ -47,7 +47,7 @@ To run the application locally, you must have Node.js and npm installed on your 
 
 ## Project Structure
 
-    ```html
+    ```
     ├── components
     │   ├── CommentForm
     │   ├── CommentsSection
@@ -61,12 +61,15 @@ To run the application locally, you must have Node.js and npm installed on your 
     │   ├── creatpost
     │   ├── editpost
     │   ├── categories
+    |   │   └──health
+    |   │   └──technology
+    |   │   └──sports
     │   ├── index.js
     │   ├── signin
     │   ├── searchresults
     │   └── signup
     ├── public
-    │   └── firebase-config.js
+    └── firebase-config.js
     ├── styles
     └── README.md
     ```
