@@ -45,7 +45,7 @@ export default function Login() {
         //className="my-28 mr-[45rem] text-xl"
         className="my-44 ml-16"
       />
-      <div className="w-screen max-w-xl h-[30rem] p-6 bg-white rounded-lg shadow-lg">
+      <div className="w-screen max-w-xl h-[30rem] p-6 bg-white rounded-lg shadow-lg md:mt-36">
         <h2 className="text-3xl font-bold mb-6 text-gray-800">Log in</h2>
         <form className="space-y-6" onSubmit={handleSubmit}>
           <div>
