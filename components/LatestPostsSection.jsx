@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { RiEdit2Fill } from "react-icons/ri";
 import { MdDeleteForever } from "react-icons/md";
+import { BsArrowUpRightCircle } from "react-icons/bs";
+import { FiArrowUpRight } from "react-icons/fi";
 import { doc, deleteDoc } from "firebase/firestore";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -10,8 +12,10 @@ import { useRouter } from "next/router";
 
 const LatestPostsSection = ({ allBlogs }) => {
   return (
-    <div className="container mx-auto md:px-20 py-10">
-      <div className="font-bold text-4xl py-12 text-center">Latest Posts</div>
+    <div className="container mx-auto md:px-20 py-8">
+      <div className="font-bold text-4xl py-12 pb-16 text-center">
+        Latest Posts
+      </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-14 ">
         {Post(allBlogs)}
@@ -45,14 +49,9 @@ function Post(allBlogs) {
     router.push(`/editpost?q=${blogid}`);
   };
 
-  // const userId = user?.uid;
-  // console.log("userId:", userId);
   return (
     <>
       {allBlogs.map((blog) => {
-        {
-          /* console.log(blog.userId); */
-        }
         return (
           <div className="item" key={blog.id}>
             <ToastContainer
@@ -112,13 +111,17 @@ function Post(allBlogs) {
                       className="hover:scale-150 duration-300"
                       onClick={() => handleEdit(blog.id)}
                     />
-                    {/* <Link href={`/editpost/${blog.id}`}>
-                      <RiEdit2Fill
-                        size={25}
+                  </div>
+                )}
+                {userId != blog.userId && (
+                  <Link href={`/blogs/${blog.id}`}>
+                    <div className="flex flex-row ml-64">
+                      <FiArrowUpRight
+                        size={22}
                         className="hover:scale-150 duration-300"
                       />
-                    </Link> */}
-                  </div>
+                    </div>
+                  </Link>
                 )}
               </div>
             </div>

@@ -4,6 +4,7 @@ import TrendingSection from "@/components/TrendingSection";
 import Head from "next/head";
 import { db } from "@/firebase-config";
 import { collection, getDocs, query, where } from "firebase/firestore";
+import Footer from "@/components/Footer";
 
 export async function getServerSideProps(context) {
   const querySnapshot = await getDocs(collection(db, "Blogs"));
@@ -47,6 +48,7 @@ export default function Home({ allBlogs, trendingBlogs }) {
       <SearchBar />
       <TrendingSection trendingBlogs={trendingBlogs} />
       <LatestPostsSection allBlogs={allBlogs} />
+      <Footer />
     </>
   );
 }

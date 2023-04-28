@@ -83,7 +83,7 @@ export default function Login() {
         </form>
         <div className="mt-8">
           <p className="text-gray-600 text-lg">
-            Don't have an account yet?{" "}
+            Don&apos;t have an account yet?{" "}
             <Link href="/signup" legacyBehavior>
               <a className="text-[#1976d2] hover:text-blue-700 hover:font-semibold">
                 Sign up here.
