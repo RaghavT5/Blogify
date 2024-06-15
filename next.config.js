@@ -2,6 +2,4 @@
 const nextConfig = {
   reactStrictMode: true,
 };
-module.exports = {
-  basePath: '/blogify',
-}
+module.exports = nextConfig
