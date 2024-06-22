@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build && mv build build_temp && mkdir build && mv build_temp build/blogify"
+  publish = "build"
+
+[[redirects]]
+  from = "/blogify/*"
+  to = "/blogify/index.html"
+  status = 200
